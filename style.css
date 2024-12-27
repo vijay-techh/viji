@@ -12,15 +12,15 @@ header{
 }
 
 .cards{
-    box-shadow: 0px 1px 2px 0.5px red;
+    box-shadow: 0px 10px 20px 0px red;
     
-    height: 80px;
+    height: 120px;
     width: 80px;
     padding: 10px;
-    position:  relative ;left:400px;
+    position:  relative ;left:350px;
     display: inline-block;
-    background-color: white;
     border-radius: 25px;
+    animation-name: ex;
     
     
     
@@ -30,18 +30,67 @@ header{
     box-shadow: 0px 20px 30px 0.7px red;
 }
 
+
 img{
     height: 80px;
     width: 80px;
     border-radius: 25px;
     
 }
-h2,p{
+
+p{
     color: white;
-    text-align: center ;
+    text-align: center;
 }
-header,p,h2
-{
-    animation-name: abc;
+h2{
+    text-align: center;
+    color: white;
 }
+@media(max-width:300px){
+    .cards{
+        box-shadow: 0px 1px 2px 0px red;
+        
+        height: 12px;
+        width: 12px;
+        padding: 5px;
+        position:  relative ;left:90px;
+        display: inline-block;
+        border-radius: 6px;
+        animation-name: ex;
+        
+        
+        
+        
+    }
+    .cards:hover{
+        box-shadow: 0px 2px 3px 0.7px red;
+    }
+    img{
+        height: 15px;
+        width: 12px;
+        border-radius: 0.2px;
+        
+    }
     
+    p{
+        color: white;
+        text-align: center;
+        font-size: 3px;
+    }
+    h2{
+        text-align: center;
+        color: white;
+    
+
+}
+header{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-seriF;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    
+
+}
+
+}
